@@ -1,0 +1,202 @@
+body {
+  font-family: "Prompt", sans-serif !important;
+}
+
+.nav-link {
+  font-family: "Taviraj", serif !important;
+  font-size: 15px !important;
+}
+
+.form-inline-nav {
+  font-family: "Taviraj", serif !important;
+}
+
+.bg-light-hr {
+  background-color: #d1222200 !important;
+}
+
+/* @media (min-width: 1200px){
+.navbar-expand-lg {
+    -ms-flex-flow: row nowrap !important;
+    flex-flow: row nowrap !important;
+    -ms-flex-pack: start !important;
+    justify-content: flex-start !important;
+    }
+} */
+
+.bg-light-hr {
+  background-color: #ffffff !important;
+}
+
+.btn {
+  border-radius: 35px !important;
+}
+
+.form-inline-nav {
+  padding-bottom: 10px !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: rgba(0, 31, 255, 0.5) !important;
+}
+
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show > .nav-link {
+  color: rgba(0, 31, 255, 0.5) !important;
+}
+
+.btn-primary:hover {
+  color: #243961 !important;
+  background-color: #0069d9 !important;
+  border-color: #0062cc !important;
+}
+
+.btn-purple {
+  color: #fff !important;
+  background-color: #42526c !important;
+  border-color: #42526c !important;
+}
+
+.btn-purple:hover {
+  color: #212529 !important;
+  background-color: #42526c !important;
+  border-color: #42526c !important;
+}
+
+@media (max-width: 1200px) {
+  .demo {
+    display: none !important;
+  }
+}
+
+.nav-link {
+  margin-right: 5px !important;
+  margin-left: 5px !important;
+}
+
+.slide {
+  display: none !important;
+}
+
+.film {
+  display: block !important;
+}
+
+.c-register {
+  /* position: absolute !important;
+  margin-left: 25% !important;
+  margin-top: 10px !important; */
+  border-radius: 12px !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+  font-family: "Taviraj", serif !important;
+}
+
+@media (max-width: 576px) {
+  .slide {
+    display: block !important;
+  }
+
+  .film {
+    display: none !important;
+  }
+
+  .mt-5 {
+    margin-top: 0 !important;
+  }
+
+  .c-register {
+    /* position: absolute !important;
+    width: 90% !important;
+    margin: -60px auto 0% 5% !important; */
+    border-radius: 12px !important;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+    font-family: "Taviraj", serif !important;
+  }
+}
+
+/* @media (min-width: 576px){
+.col-sm-3 {
+    -ms-flex: 0 0 25%!important;
+    flex: 0 0 25%!important;
+    max-width: 25%!important;
+    padding: 142px!important;}
+} */
+
+/* .body-hr{
+    width: auto!important;
+    max-width: 1920px !important;
+    margin: 0px auto!important;
+}
+.nav-set-hr{
+    position: relative!important;
+}
+
+.top-nav-hr{
+right: 200px!important;
+}
+
+.reg-log-nav-hr{
+    right: 0px!important;
+}
+
+.top-nav-hr, .reg-log-nav-hr{
+    position: absolute!important;
+} */
+
+/* li{ 
+    list-style: none!important;
+    float: left!important;
+    }
+} */
+
+.btcl {
+  background-image: linear-gradient(
+    to right,
+    #6367e5 20%,
+    #526fe5 100%
+  ) !important;
+  color: #fff !important;
+}
+
+.btcl:hover {
+  background-position: right center !important;
+  color: black !important;
+}
+
+.home-bg-hr {
+  overflow-x: hidden !important;
+}
+.card {
+  padding: 20px 20px 20px 20px;
+  margin-bottom: 40px !important;
+  position: relative !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -ms-flex-direction: column !important;
+  flex-direction: column !important;
+  min-width: 0 !important;
+  word-wrap: break-word !important;
+  background-color: #fff !important;
+  background-clip: border-box !important;
+  border-radius: 0.25rem !important;
+}
+.card-header {
+  padding: 0.75rem 1.25rem !important;
+  margin-bottom: 0 !important;
+  background-color: #6166dc !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125) !important;
+}
+.fim ul {
+  line-height: 2em !important;
+  /* list-style-image: url(images/25.png)!important; */
+  list-style-image: url(/src/images/25.png) !important;
+}
+.fim ul li::before {
+  padding-top: 30px !important;
+}
+
+.carousel-indicators {
+    padding-bottom: 70px;
+}
