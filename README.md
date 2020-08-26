@@ -66,3 +66,17 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+<!-- 
+
+ศึกษาเกี่ยวกับการใช้งาน git branch 
+- master ← เป็น branch ที่มีอยู่ก่อนหน้านี้อยู่แล้ว
+- develop
+- feature
+- release
+- hotfix
+
+อ่านเบื้องต้นที่ 
+https://medium.com/amiearth/%E0%B8%A1%E0%B8%B2%E0%B8%97%E0%B8%B3%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B8%A3%E0%B8%B9%E0%B9%89%E0%B8%88%E0%B8%B1%E0%B8%81-git-branch-560c23e67eb6 
+
+-->
