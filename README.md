@@ -69,8 +69,10 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 <!-- 
 
+ทำการ git commit และ git pull ก่อนเริ่มทำงานทุกครั้ง
+
 ศึกษาเกี่ยวกับการใช้งาน git branch 
-- master ← เป็น branch ที่มีอยู่ก่อนหน้านี้อยู่แล้ว
+- master
 - develop
 - feature
 - release
