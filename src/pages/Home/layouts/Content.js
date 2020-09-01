@@ -175,7 +175,7 @@ const Content = () => {
     if (action === "next") {
       setFunctionCarousel((functionCarousel + 1) % 3);
     } else {
-      setFunctionCarousel((functionCarousel - 1) % 3);
+      setFunctionCarousel((functionCarousel + 2) % 3);
     }
   };
   return (
@@ -413,10 +413,6 @@ const Content = () => {
                     <img src={icon5} alt="" width="50px" height="50px" />
                     <p>ปฎิทินงานของบริษัท</p>
                   </div>
-                  <div className="col">
-                    <img src={icon6} alt="" width="50px" height="50px" />
-                    <p>Mobile App สำหรับพนักงาน</p>
-                  </div>
                 </div>
               </div>
 
@@ -433,6 +429,10 @@ const Content = () => {
                     fontFamily: "'Taviraj', serif",
                   }}
                 >
+                  <div className="col">
+                    <img src={icon6} alt="" width="50px" height="50px" />
+                    <p>Mobile App สำหรับพนักงาน</p>
+                  </div>
                   <div className="col">
                     <img src={icon7} alt="" width="50px" height="50px" />
                     <p>Dashboard สำหรับผู้บริหาร</p>
