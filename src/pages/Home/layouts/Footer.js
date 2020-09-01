@@ -5,13 +5,15 @@ import iconMail from "../../../icons/mail.png";
 import icon8Line500 from "../../../icons/icons8-line-500.png";
 
 const Footer = () => {
-   const [email, setEmail] = useState('')
-  function handleSubmit(params) {
-     var checkEmail = window.confirm("กรุณาตรวจสอบความถูกต้องของอีเมล์สำหรับการติดต่อกลับ"," อีเมล์ : ",)
-     if (checkEmail) {
-         
-     }
-  }
+  const [email, setEmail] = useState("");
+  const handleSubmit = (params) => {
+    var checkEmail = window.confirm(
+      "กรุณาตรวจสอบความถูกต้องของอีเมล์สำหรับการติดต่อกลับ",
+      " อีเมล์ : "
+    );
+    if (checkEmail) {
+    }
+  };
   return (
     <footer
       style={{ backgroundColor: "#050D3C", padding: "10px 10px 10px 10px" }}
@@ -121,7 +123,7 @@ const Footer = () => {
                   type="text"
                   placeholder="อีเมล์"
                   value={email}
-                  onChange={(event)=>setEmail(event.value)}
+                  onChange={(event) => setEmail(event.value)}
                 />
                 <br />
                 <div className="form-group">
@@ -135,9 +137,7 @@ const Footer = () => {
                 <button
                   type="button"
                   className="btn btn-sm btcl"
-                  onClick={() => {
-                    handleSubmit();
-                  }}
+                  onClick={handleSubmit}
                 >
                   ส่งข้อมูลให้ติดต่อกลับ
                 </button>
