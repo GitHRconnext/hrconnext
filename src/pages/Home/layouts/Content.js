@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import imagehome from "../../../images/home-bg-hr.png";
 import imagep1 from "../../../images/p1.png";
 import image21 from "../../../images/21.png";
@@ -88,6 +88,7 @@ const InformationCard = ({
 };
 
 const Content = () => {
+  const [functionCarousel, setFunctionCarousel] = useState(0);
   const funtionsList = [
     { iconSource: icon1, name: "ประวัติบุคคล การศึกษา งาน" },
     { iconSource: icon2, name: "การลากิจ ป่วย พักร้อน" },
@@ -170,6 +171,13 @@ const Content = () => {
     },
   ];
 
+  const handleCarousel = (action) => {
+    if (action === "next") {
+      setFunctionCarousel((functionCarousel + 1) % 3);
+    } else {
+      setFunctionCarousel((functionCarousel - 1) % 3);
+    }
+  };
   return (
     <div
       style={{
@@ -181,8 +189,8 @@ const Content = () => {
       <section id="main">
         <div className="r" style={{ paddingTop: "120px" }}>
           <div className="row">
-            {/* <!--HRConnext--> */}
-            <div className="col" style={{ marginLeft: "10%" }}>
+            {/* <!--HRConnext text--> */}
+            <div className="col-12 col-sm-12 col-md-12 col-lg-6 pl-5">
               <div style={{ paddingTop: "50px", fontSize: "x-large" }}>
                 <b>
                   <p>HRConnext</p>
@@ -223,7 +231,8 @@ const Content = () => {
                 </button>
               </div>
             </div>
-            <div className="col-md-12 col-xl-5">
+            {/* <!--HRConnext picture--> */}
+            <div className="col-12 col-sm-12 col-md-12 col-lg-6">
               <img src={imagep1} alt="" width="100%" height="inherit" />
             </div>
           </div>
@@ -246,9 +255,13 @@ const Content = () => {
           <div>
             <div
               className="row text-center"
-              style={{ margin: "50px", alignItems: "flex-end" }}
+              style={{
+                margin: "50px",
+                alignItems: "flex-end",
+                justifyContent: "center",
+              }}
             >
-              <div className="col-md-12 col-xl-4">
+              <div className="col-sm-8 col-md-4 ">
                 <img src={image21} alt="" width="100%" height="inherit" />
                 <b>
                   <p>สามารถใช้งานฟังก์ชันหลัก ฟรี 100%</p>
@@ -258,7 +271,7 @@ const Content = () => {
                   diam nonumy eirmod tempor invidunt ut labore et dolore.
                 </p>
               </div>
-              <div className="col-md-12 col-xl-4 shadow-lg p-3 mb-5 bg-white rounded">
+              <div className="col-sm-8 col-md-4 shadow-lg p-3 mb-5 bg-white rounded">
                 <img src={image19} alt="" width="100%" height="inherit" />
                 <b>
                   <p>การใช้งานง่าย รูปแบบสวยงาม</p>
@@ -268,7 +281,7 @@ const Content = () => {
                   diam nonumy eirmod tempor invidunt ut labore et dolore.
                 </p>
               </div>
-              <div className="col-md-12 col-xl-4">
+              <div className="col-sm-8 col-md-4 ">
                 <img src={image20} alt="" width="100%" height="inherit" />
                 <b>
                   <p>อยู่บน Cloud Server ที่มีประสิทธิภาพและปลอดภัย</p>
@@ -324,15 +337,17 @@ const Content = () => {
               <li
                 data-target="#carouselExampleIndicators"
                 data-slide-to="0"
-                className="active"
+                className={`${functionCarousel === 0 ? "active" : ""}`}
               ></li>
               <li
                 data-target="#carouselExampleIndicators"
                 data-slide-to="1"
+                className={`${functionCarousel === 1 ? "active" : ""}`}
               ></li>
               <li
                 data-target="#carouselExampleIndicators"
                 data-slide-to="2"
+                className={`${functionCarousel === 2 ? "active" : ""}`}
               ></li>
             </ol>
             <div
@@ -349,7 +364,11 @@ const Content = () => {
                   7ความสามารถหลักของโปรแกรม HRconnext
                 </div>
               </b>
-              <div className="carousel-item active">
+              <div
+                className={`carousel-item ${
+                  functionCarousel === 0 ? "active" : ""
+                }`}
+              >
                 <div
                   className="column"
                   style={{
@@ -373,7 +392,11 @@ const Content = () => {
                 </div>
               </div>
 
-              <div className="carousel-item">
+              <div
+                className={`carousel-item ${
+                  functionCarousel === 1 ? "active" : ""
+                }`}
+              >
                 <div
                   className="column"
                   style={{
@@ -397,12 +420,15 @@ const Content = () => {
                 </div>
               </div>
 
-              <div className="carousel-item">
+              <div
+                className={`carousel-item ${
+                  functionCarousel === 2 ? "active" : ""
+                }`}
+              >
                 <div
                   className="column"
                   style={{
                     marginTop: "20px",
-                    marginLeft: "35%",
                     zIndex: "2",
                     fontFamily: "'Taviraj', serif",
                   }}
@@ -419,6 +445,7 @@ const Content = () => {
               href="#carouselExampleIndicators"
               role="button"
               data-slide="prev"
+              onClick={() => handleCarousel("prev")}
             >
               <span
                 className="carousel-control-prev-icon"
@@ -431,6 +458,7 @@ const Content = () => {
               href="#carouselExampleIndicators"
               role="button"
               data-slide="next"
+              onClick={() => handleCarousel("next")}
             >
               <span
                 className="carousel-control-next-icon"
@@ -451,8 +479,8 @@ const Content = () => {
           }}
         >
           <div
-            className="card w-50 c-register"
-            // className="card c-register card-md-4 col-xl-6"
+            // className="card w-50 c-register"
+            className="card c-register col-xs-11 col-sm-10 col-md-8 col-lg-6"
           >
             <div className="row">
               <div className="col-sm-8">
