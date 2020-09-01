@@ -6,12 +6,15 @@ import icon8Line500 from "../../../icons/icons8-line-500.png";
 
 const Footer = () => {
   const [email, setEmail] = useState("");
-  const handleSubmit = (params) => {
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
     var checkEmail = window.confirm(
       "กรุณาตรวจสอบความถูกต้องของอีเมล์สำหรับการติดต่อกลับ",
       " อีเมล์ : "
     );
     if (checkEmail) {
+      alert("การส่ง Email ยังไม่สามารถใช้งานได้")
     }
   };
   return (

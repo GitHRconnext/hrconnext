@@ -9,11 +9,6 @@ const TopBar = () => {
   const [transparentBG, setTransparentBG] = useState(true);
   const [isNavCollapsed, setIsNavCollapsed] = useState(true);
 
-  const handleNavCollapse = () => {
-    setTransparentBG(false);
-    setIsNavCollapsed(!isNavCollapsed);
-  };
-
   var styleTopBar = {
     root: {
       height: "100px",
@@ -59,6 +54,11 @@ const TopBar = () => {
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, [transparentBG, isNavCollapsed]);
+
+  const handleNavCollapse = () => {
+    setTransparentBG(false);
+    setIsNavCollapsed(!isNavCollapsed);
+  };
 
   return (
     <div style={styleTopBar.root}>

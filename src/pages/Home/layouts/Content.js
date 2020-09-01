@@ -480,7 +480,7 @@ const Content = () => {
         >
           <div
             // className="card w-50 c-register"
-            className="card c-register col-xs-11 col-sm-10 col-md-8 col-lg-6"
+            className="card c-register col-10 col-sm-10 col-md-8 col-lg-6"
           >
             <div className="row">
               <div className="col-sm-8">
@@ -509,7 +509,7 @@ const Content = () => {
       {/* <!-- 7 ความสามารถหลักของโปรแกรม HRconnext อธิบาย --> */}
       <section id="informations">
         {/* <!-- รูปและคำอธิบาย --> */}
-        <div className="" style={{ marginTop: "150px" }}>
+        <div className="">
           {informationsList.map((item, index) => (
             <InformationCard
               key={index}
