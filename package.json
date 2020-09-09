@@ -1,0 +1,22 @@
+{
+  "name": "hrconnext",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@zeit/next-css": "^1.0.1",
+    "axios": "^0.20.0",
+    "bootstrap": "^4.5.2",
+    "next": "9.5.3",
+    "react": "16.13.1",
+    "react-dom": "16.13.1"
+  },
+  "description": "no description",
+  "main": "index.js",
+  "repository": "https://github.com/GitHRconnext/hrconnext.git",
+  "license": "MIT"
+}
